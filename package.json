@@ -1,0 +1,26 @@
+{
+  "name": "namste-react",
+  "version": "1.0.0",
+  "description": "this is namste react by akshay saini",
+  "keywords": [
+    "react",
+    "namste-react",
+    "Akshay",
+    "saini",
+    "lalit",
+    "patel"
+  ],
+  "license": "ISC",
+  "author": "Lalit patel",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0"
+  }
+}
