@@ -21,22 +21,19 @@ const Header = () => {
     </div>
   );
 };
-
-const styleCard = {
-  backgroundColor: "#f0f0f0",
-};
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
+  const { resName, cuisine, rating, deliveryTime } = props;
   return (
-    <div className="res-card" style={styleCard}>
+    <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
       <img
         className="res-logo"
         alt="res-logo"
         src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/090890bc203d01d9a842b1387993fa4e"
       />
-      <h3>Meghana foods</h3>
-      <h4>Biryani, North Indian, Asian</h4>
-      <h4>4.4 stars</h4>
-      <h4>38 minutes</h4>
+      <h3>{resName}</h3>
+      <h4>{cuisine}</h4>
+      <h4>{cuisine}</h4>
+      <h4>{deliveryTime}</h4>
     </div>
   );
 };
@@ -46,9 +43,24 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
+        <RestaurantCard
+          resName="Meghana Foods"
+          cuisine="Biryani, North Indian, Asian"
+          rating="4.4 starts"
+          deliveryTime="38 minutes."
+        />
+        <RestaurantCard
+          resName="Guru kripa"
+          cuisine="paneer masla, south Indian"
+          rating="4.5 starts"
+          deliveryTime="45 minutes."
+        />
+        <RestaurantCard
+          resName="shee leela"
+          cuisine="chana masla, pavbhaji "
+          rating="4.6 starts"
+          deliveryTime="30 minutes."
+        />
       </div>
     </div>
   );
