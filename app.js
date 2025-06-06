@@ -32,8 +32,8 @@ const RestaurantCard = (props) => {
       />
       <h3>{resName}</h3>
       <h4>{cuisine}</h4>
-      <h4>{cuisine}</h4>
-      <h4>{deliveryTime}</h4>
+      <h4>{rating} starts</h4>
+      <h4>{deliveryTime} minutes</h4>
     </div>
   );
 };
@@ -46,20 +46,20 @@ const Body = () => {
         <RestaurantCard
           resName="Meghana Foods"
           cuisine="Biryani, North Indian, Asian"
-          rating="4.4 starts"
-          deliveryTime="38 minutes."
+          rating="4.4 "
+          deliveryTime="38 "
         />
         <RestaurantCard
           resName="Guru kripa"
           cuisine="paneer masla, south Indian"
-          rating="4.5 starts"
-          deliveryTime="45 minutes."
+          rating="4.5 "
+          deliveryTime="45 "
         />
         <RestaurantCard
           resName="shee leela"
           cuisine="chana masla, pavbhaji "
-          rating="4.6 starts"
-          deliveryTime="30 minutes."
+          rating="4.6 "
+          deliveryTime="30 "
         />
       </div>
     </div>
