@@ -13,14 +13,19 @@
   "license": "ISC",
   "author": "Lalit patel",
   "type": "commonjs",
-  "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "devDependencies": {
     "parcel": "^2.14.4"
   },
   "dependencies": {
-    "react": "^19.1.0"
-  }
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "browserList": [
+    "last 2 versions"
+  ]
 }
