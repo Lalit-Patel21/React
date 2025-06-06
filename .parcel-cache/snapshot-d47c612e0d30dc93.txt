@@ -14,7 +14,7 @@
 66C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\env-paths133912511999630607 1
 122C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\node-gyp-build-optional-packages\node_modules\detect-libc\LICENSE133912512098819695 0
 75C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\utility-types\dist133912512031906537 1
-50C:\Users\DELL\OneDrive\Desktop\Namste-React\app.js133936552040303092 0
+50C:\Users\DELL\OneDrive\Desktop\Namste-React\app.js133936601371459818 0
 80C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\semver\classes\range.js133912512064966292 0
 81C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\js-yaml\dist\js-yaml.mjs133912512053078417 0
 95C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\caniuse-lite\data\features\css-sel3.js133912512122826361 0
@@ -22,10 +22,10 @@
 54C:\Users\DELL\OneDrive\Desktop\Namste-React\.gitignore133936011823042981 0
 99C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\posthtml-parser\dist\location-tracker.d.ts133912512016237510 0
 91C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\domutils\lib\esm\querying.d.ts.map133912512052933276 0
-48C:\Users\DELL\OneDrive\Desktop\Namste-React\dist133936552041421480 1
+48C:\Users\DELL\OneDrive\Desktop\Namste-React\dist133936602876084837 1
 103C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\caniuse-lite\data\features\intl-pluralrules.js133912512153292548 0
 65C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\entities133912512063731402 1
-53C:\Users\DELL\OneDrive\Desktop\Namste-React\index.css133936014898575062 0
+53C:\Users\DELL\OneDrive\Desktop\Namste-React\index.css133936602931638627 0
 88C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\caniuse-lite\data\regions\LT.js133912512158197342 0
 101C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\@parcel\source-map\parcel_sourcemap_node\src133912512096780713 1
 109C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\@parcel\package-manager\test\fixtures\packages\peers133912512122482549 1
@@ -1479,7 +1479,7 @@
 84C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\ordered-binary\package.json133912512016297331 0
 87C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\@parcel\core\src\loadDotEnv.js133912512123077743 0
 77C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\msgpackr\unpack.d.ts133912512083981381 0
-73C:\Users\DELL\OneDrive\Desktop\Namste-React\dist\Namste-React.f72d0d54.js133936552041326213 0
+73C:\Users\DELL\OneDrive\Desktop\Namste-React\dist\Namste-React.f72d0d54.js133936601375454929 0
 133C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\node-gyp-build-optional-packages\node_modules\detect-libc\lib\detect-libc.js133912512099623628 0
 88C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\ordered-binary\rollup.config.js133912512009241306 0
 89C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\@parcel\workers\test\integration133912512053298177 1
@@ -4325,7 +4325,7 @@
 84C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\.bin\update-browserslist-db133912512949215383 0
 88C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\.bin\update-browserslist-db.cmd133912512949215383 0
 88C:\Users\DELL\OneDrive\Desktop\Namste-React\node_modules\.bin\update-browserslist-db.ps1133912512949215383 0
-59C:\Users\DELL\OneDrive\Desktop\Namste-React\dist\index.html133936016823092580 0
-74C:\Users\DELL\OneDrive\Desktop\Namste-React\dist\Namste-React.9e4c6fd2.css133936016822294995 0
-78C:\Users\DELL\OneDrive\Desktop\Namste-React\dist\Namste-React.9e4c6fd2.css.map133936016822348321 0
-77C:\Users\DELL\OneDrive\Desktop\Namste-React\dist\Namste-React.f72d0d54.js.map133936552041411501 0
+59C:\Users\DELL\OneDrive\Desktop\Namste-React\dist\index.html133936601375454929 0
+74C:\Users\DELL\OneDrive\Desktop\Namste-React\dist\Namste-React.9e4c6fd2.css133936602875974895 0
+78C:\Users\DELL\OneDrive\Desktop\Namste-React\dist\Namste-React.9e4c6fd2.css.map133936602876073809 0
+77C:\Users\DELL\OneDrive\Desktop\Namste-React\dist\Namste-React.f72d0d54.js.map133936601375513425 0
