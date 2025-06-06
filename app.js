@@ -22,7 +22,9 @@ const Header = () => {
   );
 };
 const RestaurantCard = (props) => {
-  const { resName, cuisine, rating, deliveryTime } = props;
+  const { resData } = props;
+  console.log("rest data", resData);
+  const { resName, cuisine, rating, deliveryTime } = resData;
   return (
     <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
       <img
@@ -38,29 +40,41 @@ const RestaurantCard = (props) => {
   );
 };
 
+const resList = [
+  {
+    resName: "Meghana Foods",
+    cuisine: "Biryani, North Indian, Asian",
+    rating: "4.4 ",
+    deliveryTime: "38 ",
+  },
+  {
+    resName: "Meg Foods",
+    cuisine: "Biryani",
+    rating: "4.4 ",
+    deliveryTime: "38 ",
+  },
+  {
+    resName: "shee leela",
+    cuisine: "chana masla, pavbhaji",
+    rating: "4.3 ",
+    deliveryTime: "35 ",
+  },
+  {
+    resName: "Guru kripa",
+    cuisine: "paneer masla, south Indian",
+    rating: "4.5 ",
+    deliveryTime: "45 ",
+  },
+];
+
 const Body = () => {
   return (
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-        <RestaurantCard
-          resName="Meghana Foods"
-          cuisine="Biryani, North Indian, Asian"
-          rating="4.4 "
-          deliveryTime="38 "
-        />
-        <RestaurantCard
-          resName="Guru kripa"
-          cuisine="paneer masla, south Indian"
-          rating="4.5 "
-          deliveryTime="45 "
-        />
-        <RestaurantCard
-          resName="shee leela"
-          cuisine="chana masla, pavbhaji "
-          rating="4.6 "
-          deliveryTime="30 "
-        />
+        {resList.map((restaurant, index) => (
+          <RestaurantCard key={index} resData={restaurant} />
+        ))}
       </div>
     </div>
   );
