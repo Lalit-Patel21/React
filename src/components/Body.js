@@ -24,6 +24,7 @@ const Body = () => {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
       const json = await response.json();
+      console.log(json?.data?.cards);
       console.log(
         json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
@@ -78,7 +79,7 @@ const Body = () => {
             setListOfRestaurants(filteredList);
           }}
         >
-          Top Rateda Restraurants
+          Top Rated Restraurants
         </button>
       </div>
       <div className="res-container">
