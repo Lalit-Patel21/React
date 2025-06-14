@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import useRestaurant from "../utils/useRestaurant";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
@@ -6,12 +6,24 @@ import { Link } from "react-router";
 
 const Body = () => {
   const listOfRestaurants = useRestaurant();
-  const [filteredRestaurants, setFilteredRestaurant] = useState([]);
+  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
+  const [searchText, setSearchText] = useState("");
+
+  // Ensure filtered restaurants update only when listOfRestaurants changes
+  useEffect(() => {
+    setFilteredRestaurants(listOfRestaurants);
+  }, [listOfRestaurants]);
+
+  // Debouncing for search input (reduces unnecessary renders)
+  const [debouncedSearchText, setDebouncedSearchText] = useState(searchText);
 
   useEffect(() => {
-    setFilteredRestaurant(listOfRestaurants);
-  }, [listOfRestaurants]);
-  const [searchText, setSearchText] = useState("");
+    const timer = setTimeout(() => {
+      setDebouncedSearchText(searchText);
+    }, 300); // Delay to prevent excessive filtering
+
+    return () => clearTimeout(timer);
+  }, [searchText]);
 
   return listOfRestaurants.length === 0 ? (
     <Shimmer />
@@ -23,36 +35,34 @@ const Body = () => {
             type="text"
             className="search-box"
             value={searchText}
-            onChange={(e) => {
-              setSearchText(e.target.value);
-            }}
+            onChange={(e) => setSearchText(e.target.value)}
           />
           <button
             onClick={() => {
-              // filter the restaurant card and update the ui
-              // search text
-              console.log(searchText);
-              const filteredRestaurants = listOfRestaurants.filter((res) =>
-                res.info.name.toLowerCase().includes(searchText.toLowerCase())
+              const filteredResults = listOfRestaurants.filter((res) =>
+                res.info.name
+                  .toLowerCase()
+                  .includes(debouncedSearchText.toLowerCase())
               );
-              setFilteredRestaurant(filteredRestaurants);
+              setFilteredRestaurants(filteredResults);
             }}
           >
             Search
           </button>
         </div>
+
         <button
           className="filter-btn"
           onClick={() => {
-            const filteredList = listOfRestaurants.filter(
-              (res) => res.info.avgRating > 4.5
+            setFilteredRestaurants(
+              listOfRestaurants.filter((res) => res.info.avgRating > 4.5)
             );
-            setFilteredRestaurant(filteredList);
           }}
         >
-          Top Rated Restraurants
+          Top Rated Restaurants
         </button>
       </div>
+
       <div className="res-container">
         {filteredRestaurants.map((restaurant) => (
           <Link
