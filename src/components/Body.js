@@ -31,7 +31,7 @@ const Body = () => {
     return (
       <>
         <h1>Looks like you are offline!!</h1>
-        <h2>please check your internet connrction!!</h2>
+        <h2>please check your internet connection!!</h2>
       </>
     );
   return listOfRestaurants.length === 0 ? (

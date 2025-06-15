@@ -10,14 +10,14 @@ const RestaurantMenu = () => {
 
   const { name, cuisines, costForTwoMessage } = resInfo[2].card?.card?.info;
 
-  console.log(resInfo[4]);
+  // console.log(resInfo[4]);
   const itemCards =
     resInfo[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card
       ?.itemCards ||
     resInfo[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card
       ?.itemCards ||
     [];
-  console.log(itemCards);
+  // console.log(itemCards);
 
   return (
     <div className="menu">
