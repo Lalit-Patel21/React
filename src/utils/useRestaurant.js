@@ -14,6 +14,7 @@ const useRestaurant = () => {
           throw new Error(`HTTP error! Status: ${response.status}`);
 
         const json = await response.json();
+
         const restaurants =
           json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
             ?.restaurants || [];
