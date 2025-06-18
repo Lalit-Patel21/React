@@ -4,11 +4,7 @@
   "description": "this is namste react by akshay saini",
   "keywords": [
     "react",
-    "namste-react",
-    "Akshay",
-    "saini",
-    "lalit",
-    "patel"
+    "namste-react"
   ],
   "license": "ISC",
   "author": "Lalit patel",
@@ -19,12 +15,18 @@
     "build": "parcel build index.html"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-typescript": "^7.27.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.3.0",
+    "jest-environment-jsdom": "^30.0.0",
     "parcel": "^2.14.4"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "@tailwindcss/postcss": "^4.1.10",
     "cors": "^2.8.5",
+    "jest": "^30.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0",

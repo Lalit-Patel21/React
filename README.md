@@ -107,28 +107,28 @@ import {Component} from "path";
 
 # Redux Toolkit (redux toolkit use immer library behind the seen to unmutate the state)
 
-Install @reduxjs/toolkit and react-redux
-Build our store
-Connect our store to our app
-Slice (cartSlice)
-dispatch(action)
-Selector
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to our app
+- Slice (cartSlice)
+- dispatch(action)
+- Selector
 
 # Types of testing (devloper)
 
-Unit Testing
-Integration Testing
-End to End Testing - e2e testing
+- Unit Testing
+- Integration Testing
+- End to End Testing - e2e testing
 
 # Setting up Testing in our app
 
-Install React Testing Library
-Installed jest
-Installed Babel dependencies
-Configure Babel
-Configure Parcel Config file to disable default babel transpilation
-Jest - npx jest --init
-Install jsdom library
-Install @babel/preset-react - to make JSX work in test cases
-Include @babel/preset-react inside my babel config
-npm i -D @testing-library/jest-dom
+- Install React Testing Library
+- Installed jest
+- Installed Babel dependencies
+- Configure Babel
+- Configure Parcel Config file to disable default babel transpilation
+- Jest - npx jest --init
+- Install jsdom library
+- Install @babel/preset-react - to make JSX work in test cases
+- Include @babel/preset-react inside my babel config
+- npm i -D @testing-library/jest-dom
